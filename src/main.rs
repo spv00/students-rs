@@ -18,8 +18,8 @@ pub fn main() {
     let student = Student::new("hansi".to_string(), 35);
 
     for grade in grades {
-        if (student.points > grade.min) && (student.points < grade.max) {
-            println!("Student {} is grade {}", student.name, grade.grade);
+        if (student.points() > grade.min()) && (student.points() < grade.max()) {
+            println!("Student {} is grade {}", student.name(), grade.grade());
             break;
         }
     }
